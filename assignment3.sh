@@ -1,4 +1,8 @@
 #!/bin/bash
+figlet swift-safe
+echo -e  "\\033[31mPROJECT MADE BY TEAM 1 \\033[0m"
+
+read -p  "Enter your email where you need to be alert ?  "  smail
 
 if [ -z "$1" ]
 then
