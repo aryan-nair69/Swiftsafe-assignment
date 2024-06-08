@@ -6,6 +6,11 @@ if ! dpkg-query -W -f='${Status}' postfix | grep "ok installed" ; then apt insta
 echo -n "Install Rustscan ......."
 sudo chmod +x  rustscan.deb
 sudo dpkg -i rustscan.deb &>/dev/null
-if  dpkg-query -W -f='${Status}' rustscan |grep "ok installed"; then echo -n "install completed";fi
-  
-                                                                                                          
+if  dpkg-query -W -f='${Status}' rustscan |grep "ok installed"; then echo -n "install completed  " ;fi
+echo -n "Install Feroxbuster it will take some time ........"
+if ! dpkg-query -W -f='${Status}' feroxbuster | grep "ok installed";then  sudo apt update && sudo apt install -y feroxbuster ;fi
+echo -e  "Thank you , Everything is installed Now , go to run.sh \n\n"
+figlet  DONE
+echo -e  "\\033[31mTEAM 1 PROJECT SWIFT SAFE \\033[0m"
+sleep 2s
+
