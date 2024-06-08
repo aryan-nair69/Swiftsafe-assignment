@@ -4,7 +4,7 @@ if ! dpkg-query -W -f='${Status}' figlet  | grep "ok installed"; then apt instal
 echo -n  "Install Postfix ........ "
 if ! dpkg-query -W -f='${Status}' postfix | grep "ok installed" ; then apt install postfix; fi
 echo -n "Installing Nikto......"
-if ! dpkg-query -W -f='${Status}' nikto | grep "ok installed" ; then apt install nikto; fi
+if ! dpkg-query -W -f='${Status}' sendemail | grep "ok installed" ; then apt install sendemail; fi
 echo -n "Install Rustscan ......."
 sudo chmod +x  rustscan.deb
 sudo dpkg -i rustscan.deb &>/dev/null
