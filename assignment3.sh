@@ -18,12 +18,13 @@ echo "Running Rustscan..."
 
 while read line
 do
-        if [[ $line == *Open* ]] && [[ $line == 80 ]]
+        if [[ $line == 80 ]]
         then
                 echo "Running Feroxbuster..."
-                #add feroxbuster command > temp1
-		#you can also add a variable to specify the word list
-    
+                read -p "Enter wordlist ...." wordlist
+                #feroxbuster -u <provide ip>  -n -t 10 -L5 -w $wordlist -o temp1.txt &>/dev/null
+                #santize feroxbuster report clear localh0ste addon
+                cat temp1.txt | tr -s "  " | cut -d " " -f 6 > results		    
         
 done < results
 
