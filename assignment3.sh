@@ -22,7 +22,7 @@ do
         then
                 echo "Running Feroxbuster..."
                 read -p "Enter wordlist ...." wordlist
-                #feroxbuster -u <provide ip>  -n -t 10 -L5 -w $wordlist -o temp1.txt &>/dev/null
+                #./feroxbuster -u <provide ip>  -n -t 10 -L5 -w $wordlist -o temp1.txt &>/dev/null
                 #santize feroxbuster report clear localh0ste addon
                 cat temp1.txt | tr -s "  " | cut -d " " -f 6 > results		    
         
