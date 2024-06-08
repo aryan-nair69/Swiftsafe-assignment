@@ -10,7 +10,7 @@ sudo chmod +x  rustscan.deb
 sudo dpkg -i rustscan.deb &>/dev/null
 if  dpkg-query -W -f='${Status}' rustscan |grep "ok installed"; then echo -n "install completed  " ;fi
 echo -n "Install Feroxbuster it will take some time ........"
-if ! dpkg-query -W -f='${Status}' feroxbuster | grep "ok installed";then  sudo apt update && sudo apt install -y feroxbuster | &>/dev/null ;fi
+if ! dpkg-query -W -f='${Status}' feroxbuster | grep "ok installed";then sudo apt install -y feroxbuster &> /dev/null ;fi
 echo -e  "Thank you , Everything is installed Now , go to run.sh \n\n"
 chmod 777 feroxbuster
 figlet  DONE
