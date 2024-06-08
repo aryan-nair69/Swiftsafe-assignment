@@ -15,10 +15,11 @@ printf "\n----- Rustscan -----\n\n" > results
 echo "Running Rustscan..."
 #add your rustscan command >> results
 #take the $1 variable for the ip addr
+rustscan -a "$target" > results.txt
 
 while read line
 do
-        if [[ $line == 80 ]]
+        if [[ $line == 80 || $line == 8080 || $line == 443 ]]
         then
                 echo "Running Feroxbuster..."
                 read -p "Enter wordlist ...." wordlist
