@@ -16,6 +16,7 @@ echo "Running Rustscan..."
 #add your rustscan command >> results
 #take the $1 variable for the ip addr
 rustscan -a $1 > results
+cat results
 
 while read line
 do
