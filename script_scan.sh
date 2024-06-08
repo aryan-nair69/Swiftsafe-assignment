@@ -60,7 +60,7 @@ fi
 echo -e "Result is saved in Result.txt"
 
 # Send email with the results
-sendemail -xu support@cyberely.me -xp YnaIT4PjN2DGZrLf -s smtp-relay.brevo.com:587 -f "alert-scan@googlexyz.in" -t "$smail" -u "REPORT IS READY" -m "HELLO TEAM, SCAN IS COMPLETE" -a '$RESULTS_FILE' &> /dev/null
+sendemail -xu support@cyberely.me -xp YnaIT4PjN2DGZrLf -s smtp-relay.brevo.com:587 -f "alert-scan@googlexyz.in" -t "$smail" -u "REPORT IS READY" -m "HELLO TEAM, SCAN IS COMPLETE" -a $RESULTS_FILE &> /dev/null
 
 # Confirm email sent
 echo "MAIL SENT"
