@@ -20,7 +20,7 @@ cat results
 
 while read line
 do
-        if [[ $line == 80 ]]
+        if [[ $line == 80 || $line == 443 || $line == 8080 ]]:
         then
                 echo "Running Feroxbuster..."
                 read -p "Enter wordlist ...." wordlist
@@ -29,7 +29,7 @@ do
                 ./feroxbuster -u $1  -n -t 10 -L5 -w $wordlist  --silent > results
                 #santize feroxbuster but no neeed now 
                 #cat temp1.txt | tr -s "  " | cut -d " " -f 6 > results		    
-        
+        fi
 done < results
 
 if [ -e temp1 ]
