@@ -5,5 +5,5 @@ TEAM 1 PROJECT SWIFTSAFE
 <ol type="1">
   <li>chmod +x install_main.sh</li> <li> ./install_main.sh</li>
   <l1>chmod +x scriptscan.sh</l1>
-  <li> ./scriptscan.sh  <website-argument ></li>
+  <li> ./scriptscan.sh (WEBSITE ARGUMNET) </li>
 </ol>
