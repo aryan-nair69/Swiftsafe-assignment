@@ -15,7 +15,7 @@ printf "\n----- Rustscan -----\n\n" > results
 echo "Running Rustscan..."
 #add your rustscan command >> results
 #take the $1 variable for the ip addr
-rustscan -a "$target" > results.txt
+rustscan -a "$1" > results.txt
 
 while read line
 do
