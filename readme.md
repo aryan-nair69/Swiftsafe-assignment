@@ -1,9 +1,9 @@
 TEAM 1 PROJECT SWIFTSAFE
 <h1>SWIFT SAFE</h1>
-<P>
-  INSTALL :-
-  1. chmod +x install_main.sh
-  2. ./install_main.sh
-  3. chmod +x scriptscan.sh
-  4. ./scriptscan.sh  <website-argument >  
-</P>
+
+<h5>  INSTALL :-</h5>
+<ol>
+  <li>1. chmod +x install_main.sh</li> <li> 2. ./install_main.sh</li>
+  <l1>3. chmod +x scriptscan.sh</l1>
+  <li>4. ./scriptscan.sh  <website-argument ></li>
+</ol>
