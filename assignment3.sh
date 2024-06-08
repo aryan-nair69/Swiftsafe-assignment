@@ -18,7 +18,7 @@ echo "Running Rustscan..."
 
 while read line
 do
-        if [[ $line == 80 ]]
+        if [[ $line == *Open* ]] && [[ $line == 80 ]]
         then
                 echo "Running Feroxbuster..."
                 #add feroxbuster command > temp1
