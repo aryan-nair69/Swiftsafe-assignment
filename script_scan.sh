@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 
 # Print the project title
 figlet -f slant Swift-Safe
