@@ -38,7 +38,10 @@ TARGET=$1
 
 # Run RustScan
 echo "Running RustScan on target: $TARGET"
-rustscan -a $TARGET >> $RESULTS_FILE
+touch temp011.txt
+rustscan -a $TARGET > temp011.txt
+tail -n 25  temp011.txt >> $RESULTS_FILE
+rm -rf temp011.txt
 
 # Check if port 80 is open in the results
 if grep -q "80/tcp" $RESULTS_FILE; then
@@ -56,7 +59,7 @@ if grep -q "80/tcp" $RESULTS_FILE; then
     if [ -e temp1 ]; then
         printf "\n----- DIRS -----\n\n" >> $RESULTS_FILE
         cat temp1 >> $RESULTS_FILE
-        
+        rm -rf temp1
     fi
 fi
 
