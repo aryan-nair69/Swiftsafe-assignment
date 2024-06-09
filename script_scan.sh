@@ -70,7 +70,9 @@ fi
 # Display results
 echo -e "Result is saved in Result.txt"
 while [[ ! "$smail" =~ ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$ ]]; do
-  echo "Please enter a valid email address."
+  echo "Please enter a valid email
+ address."
+  exit 1;
 done
 
 # Send email with the results
