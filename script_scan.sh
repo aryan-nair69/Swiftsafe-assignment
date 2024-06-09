@@ -14,7 +14,8 @@ if [ -z "$1" ]; then
 fi
 # Prompt for email
 read -p "Enter your email where you need to be alerted: " smail
-
+#wordlist
+read -p "Enter wordlist for Enumeration in Feroxbuster :-- " wordlist
 # Output file for results
 RESULTS_FILE="results.txt"
 #nslookup
@@ -49,7 +50,7 @@ if grep -q "80/tcp" $RESULTS_FILE; then
     echo "Port 80 found open. Running Feroxbuster..."
 
     # Prompt for wordlist
-    read -p "Enter wordlist: " wordlist
+    
     figlet SCAN
     echo -e "\\033[31mIt will take some time, please wait.\\033[0m"
 
