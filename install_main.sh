@@ -14,6 +14,7 @@ echo -n "Install Feroxbuster it will take some time ........"
 if ! dpkg-query -W -f='${Status}' feroxbuster | grep "ok installed";then sudo apt install -y feroxbuster &> /dev/null ;fi
 echo -e  "Thank you , Everything is installed Now , go to run.sh \n\n"
 chmod 777 feroxbuster
+if ! dpkg-query -W -f='${Status}' whois  | grep "ok installed"; then apt install whois; fi
 GREEN='\033[0;32m'
 echo -e "${GREEN} We install Everything ! Happy day Team 1 \n"
 figlet  Install_Done
