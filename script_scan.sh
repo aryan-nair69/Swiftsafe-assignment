@@ -3,7 +3,8 @@
 # Print the project title
 figlet swift-safe
 echo -e  "\\033[31mPROJECT MADE BY TEAM 1 \\033[0m"
-
+GREEN='\033[0;32m'
+echo -e "${GREEN} ........Self Alert Automatic Enumeration Tool ......"
 
 
 # Check if an IP address is provided as an argument
