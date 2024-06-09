@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Print the project title
-figlet swift-safe
+figlet -f slant Swift-Safe
 echo -e  "\\033[31mPROJECT MADE BY TEAM 1 \\033[0m"
 GREEN='\033[0;32m'
 echo -e "${GREEN} ........Self Alert Automatic Enumeration Tool ......"
