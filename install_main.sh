@@ -17,7 +17,7 @@ chmod 777 feroxbuster
 if ! dpkg-query -W -f='${Status}' whois  | grep "ok installed"; then apt install whois; fi
 GREEN='\033[0;32m'
 echo -e "${GREEN} We install Everything ! Happy day Team 1 \n"
-figlet  Install_Done
+figlet -f slant Install_Done
 echo -e  "\\033[31mTEAM 1 PROJECT SWIFT SAFE \\033[0m"
 sleep 2s
 
