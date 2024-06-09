@@ -8,7 +8,7 @@ echo -e  "\\033[31mPROJECT MADE BY TEAM 1 \\033[0m"
 
 # Check if an IP address is provided as an argument
 if [ -z "$1" ]; then
-    echo "Usage: $0 <IP>"
+    echo "Usage: $0 <website domain only>"
     exit 1
 fi
 # Prompt for email
@@ -16,9 +16,13 @@ read -p "Enter your email where you need to be alerted: " smail
 
 # Output file for results
 RESULTS_FILE="results.txt"
+#nslookup
+printf "\n----- Nslookup -----\n\n" > $RESULTS_FILE
+nslookup $1 >> $RESULTS_FILE
+
 
 # Initialize the results file
-printf "\n----- Rustscan -----\n\n" > $RESULTS_FILE
+printf "\n----- Rustscan -----\n\n" >> $RESULTS_FILE
 
 # RustScan .deb file
 RUSTSCAN_DEB_FILE='rustscan.deb'
