@@ -21,6 +21,8 @@ RESULTS_FILE="results.txt"
 #nslookup
 printf "\n----- Nslookup -----\n\n" > $RESULTS_FILE
 nslookup $1 >> $RESULTS_FILE
+printf "\n----- whois  -----\n\n" >> $RESULTS_FILE
+whois $1 >> $RESULTS_FILE
 
 
 # Initialize the results file
