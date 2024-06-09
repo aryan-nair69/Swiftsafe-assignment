@@ -1,4 +1,5 @@
 #!/bin/bash
+echo -e "${GREEN} ---------Install Now------------- \n"
 echo -n "INSTALLING  MAIN  FILES  .........."
 if ! dpkg-query -W -f='${Status}' figlet  | grep "ok installed"; then apt install figlet; fi 
 echo -n  "Install Postfix ........ "
