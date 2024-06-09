@@ -6,6 +6,6 @@ TEAM 1 PROJECT SWIFTSAFE
   <li>chmod +x install_main.sh </li> 
   <li> ./install_main.sh </li>
   <l1>chmod +x scriptscan.sh </l1>
-  <li> ./scriptscan.sh (WEBSITE ARGUMNET) </li>
+  <li> ./script_scan.sh (WEBSITE ARGUMNET) </li>
 </ol>
 
